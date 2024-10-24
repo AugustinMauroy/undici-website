@@ -1,0 +1,27 @@
+.notFoundSection main {
+  @apply flex
+        h-screen
+        w-screen
+        flex-col
+        items-center
+        gap-6
+        justify-center;
+
+  h1 {
+    @apply text-4xl
+        font-bold
+        leading-tight
+        tracking-tight
+        text-gray-900
+        dark:text-gray-200;
+  }
+
+  p {
+    @apply text-lg
+        font-medium
+        leading-tight
+        tracking-tight
+        text-gray-600
+        dark:text-gray-400;
+  }
+}

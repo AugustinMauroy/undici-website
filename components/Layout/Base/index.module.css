@@ -1,0 +1,11 @@
+.wrapper {
+  @apply flex
+        min-h-screen
+        flex-col;
+
+  .main {
+    @apply flex-1
+      size-full
+      overflow-scroll;
+  }
+}

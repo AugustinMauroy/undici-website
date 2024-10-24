@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind variants;
+
+html {
+  @apply motion-safe:scroll-smooth;
+}
+
+body {
+  @apply bg-white
+    text-gray-950
+    dark:bg-gray-950
+    dark:text-gray-50;
+}

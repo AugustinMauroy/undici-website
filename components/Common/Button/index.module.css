@@ -1,0 +1,174 @@
+.button,
+.link {
+  @apply flex
+    w-fit
+    cursor-pointer
+    flex-row
+    items-center
+    justify-center
+    gap-1.5
+    rounded-md
+    px-4
+    py-2
+    transition-all;
+
+  &[aria-disabled='true'] {
+    @apply cursor-not-allowed;
+  }
+}
+
+.button:focus {
+  @apply outline-none;
+}
+
+.primary {
+  &.solid {
+    @apply bg-indigo-600
+    text-white
+    dark:bg-indigo-700
+    dark:text-white;
+
+    &:hover {
+      @apply bg-indigo-700
+      dark:bg-indigo-800;
+    }
+
+    &:active {
+      @apply bg-indigo-800
+      dark:bg-indigo-900;
+    }
+
+    &[aria-disabled='true'] {
+      @apply bg-indigo-400
+      dark:bg-indigo-500;
+    }
+
+    &:focus {
+      @apply ring-2
+        ring-indigo-700
+        dark:ring-indigo-500;
+    }
+
+    &.special {
+      @apply shadow-md
+        shadow-indigo-600
+        dark:shadow-indigo-700;
+
+      &:hover {
+        @apply shadow-lg
+        shadow-indigo-700
+        dark:shadow-indigo-800;
+      }
+    }
+  }
+
+  &.outline {
+    @apply border border-indigo-600
+      text-indigo-600
+      dark:border-indigo-700
+      dark:text-indigo-700;
+
+    &:hover {
+      @apply bg-indigo-600
+        text-white
+        dark:bg-indigo-700
+        dark:text-white;
+    }
+
+    &:active {
+      @apply bg-indigo-700
+        text-white
+        dark:bg-indigo-800
+        dark:text-white;
+    }
+
+    &[aria-disabled='true'] {
+      @apply border-indigo-400
+        text-indigo-400
+        dark:border-indigo-500
+        dark:text-indigo-500;
+    }
+
+    &:focus {
+      @apply ring-2
+        ring-indigo-700
+        dark:ring-indigo-500;
+    }
+  }
+}
+
+.secondary {
+  &.solid {
+    @apply bg-gray-600
+      text-white
+      dark:bg-gray-700
+      dark:text-white;
+
+    &:hover {
+      @apply bg-gray-700
+      dark:bg-gray-800;
+    }
+
+    &:active {
+      @apply bg-gray-800
+      dark:bg-gray-900;
+    }
+
+    &[aria-disabled='true'] {
+      @apply bg-gray-400
+      dark:bg-gray-500;
+    }
+
+    &:focus {
+      @apply ring-2
+        ring-gray-700
+        dark:ring-gray-500;
+    }
+
+    &.special {
+      @apply shadow-md
+        shadow-gray-600
+        dark:shadow-gray-700;
+
+      &:hover {
+        @apply shadow-lg
+          shadow-gray-700
+          dark:shadow-gray-800;
+      }
+    }
+  }
+
+  &.outline {
+    @apply border border-gray-600
+      text-gray-600
+      dark:border-gray-700
+      dark:text-gray-700;
+
+    &:hover {
+      @apply bg-gray-600
+        text-white
+        dark:bg-gray-700
+        dark:text-white;
+    }
+
+    &:active {
+      @apply bg-gray-700
+        text-white
+        dark:bg-gray-800
+        dark:text-white;
+    }
+
+    &[aria-disabled='true'] {
+      @apply border-gray-400
+        text-gray-400
+        dark:border-gray-500
+        dark:text-gray-500;
+    }
+
+    &:focus {
+      @apply ring-2
+        ring-gray-700
+        dark:ring-gray-500;
+    }
+  }
+}
