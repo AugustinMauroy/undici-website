@@ -2,7 +2,6 @@ import type { Config } from 'tailwindcss';
 
 export default {
   content: [
-    './.storybook/**/*.stories.tsx',
     './app/**/*.tsx',
     './components/**/*.tsx',
   ],

@@ -1,0 +1,143 @@
+.select {
+  @apply inline-flex
+    flex-col
+    gap-1.5;
+
+  .label {
+    @apply block
+      w-full
+      text-sm
+      font-medium
+      text-gray-800
+      dark:text-gray-200;
+  }
+
+  .trigger {
+    @apply shadow
+      inline-flex
+      h-11
+      w-full
+      min-w-[17rem]
+      items-center
+      justify-between
+      gap-2
+      rounded
+      border
+      border-gray-300
+      bg-white
+      px-3.5
+      py-2.5
+      text-left
+      text-base
+      font-medium
+      text-gray-900
+      outline-none
+      focus:border-gray-500
+      focus:ring-1
+      focus:ring-gray-500
+      data-[placeholder]:text-gray-800
+      dark:border-gray-800
+      dark:bg-gray-950
+      dark:text-white
+      dark:focus:border-gray-600
+      dark:focus:ring-gray-600
+      dark:data-[placeholder]:text-gray-200;
+  }
+
+  .trigger span {
+    @apply flex
+      h-5
+      items-center
+      gap-2;
+  }
+
+  .icon {
+    @apply size-5
+      text-gray-600
+      dark:text-gray-400;
+  }
+}
+
+.dropdown {
+  @apply max-h-48
+    max-w-xs
+    overflow-hidden
+    overflow-y-auto
+    rounded-md
+    border
+    border-gray-200
+    bg-white
+    shadow-lg
+    dark:border-gray-800
+    dark:bg-gray-950;
+
+  .item {
+    @apply select-none
+      truncate
+      px-2.5
+      py-1.5
+      text-sm
+      font-medium;
+  }
+
+  .text {
+    @apply text-gray-800
+      data-[highlighted]:bg-indigo-500
+      data-[highlighted]:text-white
+      data-[highlighted]:outline-none
+      dark:text-gray-200
+      dark:data-[highlighted]:bg-indigo-600;
+  }
+
+  .text > span {
+    @apply flex
+      items-center
+      gap-2;
+  }
+
+  .text > span > span {
+    @apply max-w-64
+      truncate
+      text-wrap;
+  }
+
+  .label {
+    @apply text-gray-600
+      dark:text-gray-400;
+  }
+}
+
+.dropdown:has(.label) .text > span > span {
+  @apply pl-3;
+}
+
+.inline {
+  .trigger {
+    @apply h-auto
+      min-w-fit
+      px-2.5
+      py-2
+      text-sm
+      font-medium;
+  }
+
+  .icon {
+    @apply size-4;
+  }
+
+  .text {
+    @apply text-gray-900
+      data-[highlighted]:bg-gray-100
+      data-[disabled]:text-gray-600
+      data-[highlighted]:text-gray-900
+      dark:text-white
+      dark:data-[highlighted]:bg-gray-900
+      dark:data-[disabled]:text-gray-700;
+  }
+
+  &.dropdown {
+    @apply mt-1
+      w-[calc(100%+1.5rem)]
+      rounded;
+  }
+}

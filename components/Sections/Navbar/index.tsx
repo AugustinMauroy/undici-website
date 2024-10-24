@@ -14,7 +14,7 @@ const Navbar: FC = () => (
       </li>
       {NAVBAR_LINKS.left.map(link => (
         <li key={link.href}>
-          <ActiveLink href={link.href} activeClassName={styles.active}>
+          <ActiveLink href={link.href} activeClassName={styles.active} allowSubPath>
             {link.label}
           </ActiveLink>
         </li>

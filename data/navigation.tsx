@@ -1,12 +1,12 @@
 import GitHubIcon from '~/components/Icons/Social/GitHub';
 import TwitterIcon from '~/components/Icons/Social/Twitter';
-import { LASTEST_UNIDIC_VERSION } from '~/data/version';
+import { LASTEST_UNDICi_VERSION } from '~/data/version';
 
 export const NAVBAR_LINKS = {
   left: [
     {
       label: 'docs',
-      href: `/docs/${LASTEST_UNIDIC_VERSION.url}`,
+      href: `/docs/${LASTEST_UNDICi_VERSION.url}`,
     },
     {
       label: 'benchmarks',

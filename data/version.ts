@@ -1,8 +1,8 @@
 /**
- * Unidic version we want on the website
+ * UNDICi version we want on the website
  * `url` is the possbile version to be used in the website's URL
  */
-export const UNIDIC_VERSION = [
+export const UNDICi_VERSION = [
     {
         major: 6,
         branch: "v6.x",
@@ -15,9 +15,10 @@ export const UNIDIC_VERSION = [
     },
 ];
 
-export const LASTEST_UNIDIC_VERSION = UNIDIC_VERSION.reduce((acc, version) => {
+export const LASTEST_UNDICi_VERSION = UNDICi_VERSION.reduce((acc, version) => {
     if (version.major > acc.major) {
         return version;
     }
+    
     return acc;
-}, UNIDIC_VERSION[0]);
+}, UNDICi_VERSION[0]);
