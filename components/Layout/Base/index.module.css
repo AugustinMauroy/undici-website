@@ -4,8 +4,8 @@
         flex-col;
 
   .main {
-    @apply flex-1
-      size-full
+    @apply size-full
+      flex-1
       overflow-scroll;
   }
 }

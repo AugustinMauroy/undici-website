@@ -2,11 +2,13 @@ const UNDICiI_DOCS_URL = (branch: string) =>
   // https://raw.githubusercontent.com/nodejs/undici/refs/heads/main/docs/docsify/sidebar.md
   `https://raw.githubusercontent.com/nodejs/undici/refs/heads/${branch}`;
 
-
-export const getRawContent = async (branch: string, slug: string | string[]) => {
-  const url = Array.isArray(slug) ?
-    `${UNDICiI_DOCS_URL(branch)}/${slug.join('/')}` :
-    `${UNDICiI_DOCS_URL(branch)}/${slug}`;
+export const getRawContent = async (
+  branch: string,
+  slug: string | string[]
+) => {
+  const url = Array.isArray(slug)
+    ? `${UNDICiI_DOCS_URL(branch)}/${slug.join('/')}`
+    : `${UNDICiI_DOCS_URL(branch)}/${slug}`;
 
   const response = await fetch(url);
 
@@ -23,8 +25,9 @@ export const getRawContent = async (branch: string, slug: string | string[]) => 
  * v6.X : https://raw.githubusercontent.com/nodejs/undici/refs/heads/v6.x/docs/docsify/sidebar.md
  */
 export const getDocSidebar = (version: string) => {
-  const links = version.startsWith('v5') ? ['docsify', 'sidebar.md'] : ['docs', 'docsify', 'sidebar.md'];
+  const links = version.startsWith('v5')
+    ? ['docsify', 'sidebar.md']
+    : ['docs', 'docsify', 'sidebar.md'];
 
   return getRawContent(version, links);
 };
-

@@ -23,3 +23,30 @@
     </picture>
   </a>
 </p>
+
+## TODOs
+
+- [ ] Add fetch md content from GitHub
+- [ ] Fix styles for Sidebar (menu burger)
+- [ ] MD components
+  - [ ] CodeBlock (shiki ???)
+  - [ ] Image
+  - [ ] Table
+  - [ ] List
+  - [ ] Link
+  - [ ] Heading with anchor
+  - [ ] Blockquote
+  - [ ] InlineCode
+  - [ ] Strong
+  - [ ] Emphasis
+  - [ ] Delete (strikethrough)
+  - [ ] `details` and `summary`
+- [ ] Charts components
+- ~ Take a look about search (orama ???)
+- [ ] Landing page
+- [ ] Unit tests
+- [ ] Documentation:
+  - [ ] How to maintain the webiste
+  - [ ] How `nodejs/undici` should write markdown to keep the website updated
+- [ ] Commit hooks
+- [ ] CI/CD

@@ -8,13 +8,15 @@ const Navbar: FC = () => (
   <nav className={styles.navbar}>
     <ul>
       <li>
-        <Link href='/'>
-          Undici
-        </Link>
+        <Link href="/">Undici</Link>
       </li>
       {NAVBAR_LINKS.left.map(link => (
         <li key={link.href}>
-          <ActiveLink href={link.href} activeClassName={styles.active} allowSubPath>
+          <ActiveLink
+            href={link.href}
+            activeClassName={styles.active}
+            allowSubPath
+          >
             {link.label}
           </ActiveLink>
         </li>

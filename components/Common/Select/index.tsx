@@ -7,9 +7,8 @@ import { useId, useMemo } from 'react';
 import styles from './index.module.css';
 import type { FC, ReactNode } from 'react';
 
-
 type SelectValue = {
-  label: ReactNode
+  label: ReactNode;
   value: string;
   iconImage?: ReactNode;
   disabled?: boolean;

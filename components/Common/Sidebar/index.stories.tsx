@@ -17,20 +17,22 @@ export const Default: Story = {
         link: '/discover',
       },
       {
-        label: "api",
+        label: 'api',
         items: [
-            {
-                label: 'fetch',
-                link: '/api/fetch',
-            }, {
-                label: 'user agent',
-                link: '/api/user-agent',
-            }, {
-                label: 'proxy',
-                link: '/api/proxy',
-            }
-        ]
-      }
-    ]
+          {
+            label: 'fetch',
+            link: '/api/fetch',
+          },
+          {
+            label: 'user agent',
+            link: '/api/user-agent',
+          },
+          {
+            label: 'proxy',
+            link: '/api/proxy',
+          },
+        ],
+      },
+    ],
   },
 };
